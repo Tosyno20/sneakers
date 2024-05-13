@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+}
+
+.top-t,
+h2 {
+    text-decoration: none;
+    color: rgb(63, 58, 58);
+    font-weight: 750;
+
+}
+
+.n-top {
+    font-size: 17px;
+    color: rgb(101, 95, 95);
+
+    position: relative;
+}
+
+.items {
+    margin: 0 6.5% !important;
+    text-decoration: none;
+    position: relative;
+
+}
+ li a {
+    position: relative;
+    text-decoration: none !important;
+    color: rgb(100, 97, 97);
+ }
+ li a:hover{
+    color: rgb(100, 97, 97);
+ 
+ }
+
+.cart {
+    position: absolute;
+    left: 93%;
+    width: 50px;
+    /* background-color: red; */
+
+}
+.cartNum{
+    position: absolute;
+    bottom: 19px;
+    right: 13px;
+    width: 18px;
+    background-color: orange;
+    /* height: 10px; */
+    color: white;
+    font-size: 9px;
+    border-radius:50%;
+    padding: 2px 2px 2px 6px;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.881);
+    opacity: 0;
+    
+}
+
+.m-cart {
+    font-size: 25px;
+    color: rgb(157, 156, 156);        
+}
+
+/* .profile-section {
+    /* text-align: center; Center align the content */
+/* margin: 20px; Add some margin around the section *
+} */
+.profile-image {
+    width: 40px;
+    /* Set the width of the image */
+    height: 40px;
+    /* Set the height of the image */
+    border-radius: 50%;
+    /* Make the image round */
+    object-fit: cover;
+    /* Cover the entire area of the image container */
+    /* Add some margin below the image */
+    position: absolute;
+    left: 99%;
+    bottom: 0.2%;
+}
+
+.nav-container {
+    border-bottom: 2px solid rgba(191, 188, 188, 0.231);
+}
+
+.profile-image:hover {
+    border: 2px solid rgb(236, 119, 9);
+    /* cursor: pointer; */
+}
+
+.items a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-bottom: 3px solid rgb(255, 148, 48);
+    left: 0;
+    
+    bottom: -36px;
+    opacity: 0;
+    transition: .2s all;
+}
+.img-thumb{
+    width: 70px;
+    margin: 10px 1%;
+    border-radius: 7px;
+}
+
+.img-thumb.active {
+    filter: contrast(75%) ;
+    box-shadow: 0 0 0 1px white, 
+                0 0 0 4px rgb(255, 148, 48);
+}
+.img-caro {
+    width: 80px !important;
+    height: 60px !important;
+    margin-top: 100px !important;
+    border-radius: 7px !important; 
+    
+}
+.img-caro.active{
+    opacity: 100% !important;
+}
+.items a:hover::after {
+    opacity: 1;
+    
+}
+.content{
+    font-size: 20px;
+    font-weight: 450;
+    color: rgb(137, 137, 137);
+}
+.sneaky h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(249, 128, 15);
+    font-family: "Roboto", sans-serif;
+}
+
+.sneaky h1{
+    font-weight: 700;
+    color: rgb(82, 79, 79);
+    font-size: 45px;
+    font-family: "Roboto", sans-serif;
+}
+.price{
+    font-weight: 750;
+    font-size: 35px;
+    color: rgb(82, 79, 79);
+    font-family: "Roboto", sans-serif;
+
+}
+.discount{
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    background-color:  rgba(250, 228, 208, 0.518);
+    color:  rgb(255, 123, 0);
+    font-weight: 750;
+    border-radius: 7px;
+    position: relative;
+    bottom: 6px;
+}
+.old-price{
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: line-through;
+    color: rgb(192, 192, 192);
+    font-family: "Roboto", sans-serif;
+
+}
+.n-items{
+    border: none;
+    background-color: transparent;
+    font-weight: 900;
+    color: rgb(255, 148, 48);
+    font-size: 22px;
+    padding: 5px 10%;
+}
+.t-items{
+    background-color: rgba(225, 225, 225, 0.562);
+    width: 150px;
+    border-radius: 8px;
+}
+.num{
+    margin-top: 11px;
+}
+.modal_content{
+    background-color: transparent;
+    border: none;
+}
+.add-cart{
+    width: 150px;
+    background-color: rgb(255, 148, 48);
+    border-radius: 7px;
+    padding: 5px 10px;
+    margin: 0 15px;
+    font-size:15px;
+    color: white;
+    cursor: pointer;
+}
+.viewSelected{
+    width: 120px;
+    border-radius: 5px;
+}
+.Pro-name{
+    font-size: 20px;
+}
+.a-cart{
+    font-size: 18px;
+}
+.imp{
+    border-radius: 10px;
+}
+.prod-img{
+    width: 500px; 
+    border-radius: 10px;
+    margin: 0px 50px;
+
+}
+
+
+
+
+
+
+
+
+
+/* .profile-image{
+    width: 260px;
+    border-radius: 50%;
+} */
+#picture-segment {
+    text-align: center;
+    margin: 20px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+#file-input {
+    display: none;
+}
+
+#upload-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#upload-button:hover {
+    background-color: #0056b3;
+}
+
+#preview-image {
+    max-width: 300px;
+    margin-top: 10px;
+}
+.list-container{
+    background-color: #fabd8b13;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.text_div{
+    border-bottom: 2px solid rgba(159, 159, 159, 0.189);
+    margin-bottom: 30px;
+}
